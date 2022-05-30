@@ -1,0 +1,277 @@
+body{
+    background:#5d7f4eea;
+    font-family:  sans-serif;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+body::before{
+
+    background: url(./fondo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
+    margin: 0;
+    margin-top: -100px;
+    margin-left: 355px;
+    padding: 0;
+    transform: perspective(200px) rotateZ(-17deg) translateZ(100px);
+    overflow: hidden;
+    opacity: .9;
+}
+.container-dashboard{
+    background: #ccc;
+    margin: 30px auto ;
+    width: 860px;
+    max-width: 860px;
+}
+.header-dasboard{
+    background:white;
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+.header-dasboard .icon-dashboard{
+    width:22px;
+    height:22px;
+    margin-left:11px;
+    font-size: 10px;
+    margin-top: 10px;
+}
+.header-dasboard nav{
+    display:inline;
+    position: relative;
+    top: -6px;
+}
+.header-dasboard nav ol {
+    list-style: none;
+    display: inline-flex;
+    position: relative;
+}
+.header-dasboard ol li{
+    margin: 0px 10px;
+}
+.header-dasboard ol a {
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+    font-size: 14px;
+    position: relative;
+}
+
+.header-dasboard .login{
+    display: inline-flex;
+    position: absolute;
+    right: 25px;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+}
+.header-dasboard .login .search {
+    width: 110px;
+    height: 25px;
+    border-radius: 15px;
+    border: solid .3px #0000006e;
+    padding-left: 12px;
+    font-size: 12px;
+
+}
+.header-dasboard .login .search:focus {
+    outline:  solid .4px #0000006e;
+}
+
+.container-dashboard .container-data{
+    background-color:rgb(238, 233, 233);
+    width: 100%;
+    min-height: 625px;
+    display: grid;
+    grid-template-rows: max-content;
+    padding: 0 30px 30px;
+    box-sizing: border-box;
+
+}
+.container-dashboard .container-data span{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 10px 0px -10px;
+}
+
+.container-dashboard .container-data span h3{
+    font-weight: 500;
+    letter-spacing: -.5px;
+    margin-top: 16px;
+}
+.container-dashboard .container-data span p{
+    font-size: 14px;
+    margin: 20px 0px;
+}
+
+.container-dashboard .container-data .statistic{
+    width: 800px;
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    max-height: 530px;
+    margin: auto;
+}
+.container-dashboard .container-data .items{
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.718);
+    border-radius: 2px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.container-dashboard .container-data .items-2{
+    padding: 10px 20px;
+}
+.container-dashboard .container-data .items-2 p{
+    font-size: 11px;
+    margin-top: 5px;
+}
+.statistic .items h4,p{
+    margin: 0;
+    padding: 0;
+}
+.container-dashboard .container-data .statistic .items:nth-child(1){
+    height: 200px;
+    width: 315px;
+}
+.container-dashboard .container-data .statistic .items:nth-child(2){
+    width: 469px;
+    height: 200px;
+}
+.items:nth-child(3),.items:nth-child(4),.items:nth-child(5),.items:nth-child(6){
+    width: 189px;
+    height: 70px;
+}
+.container-dashboard .container-data .statistic .items:nth-child(7){
+    width: 237px;
+    height: 230px;
+    overflow: auto;
+}
+.container-dashboard .container-data .recent-documents{
+    display:inline-flex;
+    flex-direction:column;
+    padding:20px 30px;
+    position: relative;
+}
+.container-dashboard .container-data .recent-documents::before{
+    content: "";
+    position: sticky;
+    width:237px;
+    display: inline-block;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255)80%);
+    margin: -20px -30px;
+    padding: 20px 0;
+    top:170px;
+}
+.recent-documents h4,.recent-documents ul, .recent-documents li, .recent-documents p{
+    padding: 0;
+    margin: 0;
+}
+.container-dashboard .container-data .recent-documents h4{
+    font-size: 15px;
+    font-weight: 600;
+    display: block;
+    margin: 10px 0;
+}
+.recent-documents li{
+    font-size: 12px;
+    margin: 10px 0 0 15px;
+    /* font-family:  sans-serif; */
+    letter-spacing: 2.px;
+    font-weight: 600;
+}
+.recent-documents p{
+    font-size: 11px;
+    margin: 0px 0 15px 15px;
+}
+
+.container-dashboard .container-data .statistic .items:nth-child(8){
+    width: 260px;
+    height: 230px;
+}
+.container-dashboard .container-data .statistic .items:nth-child(9){
+    width: 273px;
+    height: 230px;
+}
+
+#graph-pie{
+    max-width: 310px;
+    max-height: 195px;
+}
+#graph-line{
+    max-width: 468px;
+    max-height: 200px;
+}
+
+
+        /* estilos para iconos */
+.fa-2x{
+    color: #5d7f4e;
+    margin-top: 7px;
+}
+
+
+
+        /* Styles-Calendar */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman';
+}
+.calendar .container-calendar{
+    background-color: white;
+    position: relative;
+    width: 260px;
+    height: 230px;
+    box-sizing: border-box;
+    padding: 20px 15px;
+}
+.calendar .container-calendar .month-year{
+    margin-bottom: 18px;
+}
+.container-calendar ol{
+    list-style:none;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 2px 0px;
+    justify-items:center;
+}
+.container-calendar li{
+    font-size: 13px;
+    text-align: center;
+    padding: 4px 2px  0px 2px;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+}
+.calendar .container-calendar .daysName{
+    list-style: none;
+    background-color: #5d7f4e85;
+    border-radius: 0;
+    display: grid;
+    grid-gap: 2px 0px;
+    justify-items:center;
+    cursor: default;
+    grid-template-columns: repeat(7,1fr);
+}
+.calendar .container-calendar .daysName li{
+    font-size: 14px;
+}
+.container-calendar .today{
+    color: white;
+    background-color: #5d7f4e;
+}
+.container-calendar ol li:hover {
+    cursor: default;
+    color: white;
+    background-color: #5d7f4e;
+}
+.container-calendar .firstDay{
+    grid-column-start: 4;
+}

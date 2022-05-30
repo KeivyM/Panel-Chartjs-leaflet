@@ -1,0 +1,49 @@
+{
+    "pie":{
+        "type":"pie",
+        "data":{
+            "labels":["Apple","Orange","Pineapple","Pear"],
+            "datasets":[{
+                "data": [473,248,312,312],
+                "backgroundColor": ["red","orange","lightyellow","lightgreen"],
+                "borderColor":"#000",
+                "borderWidth": ".3"
+            }]
+        },
+        "options":{
+            "rotation":40
+        }
+    },
+    "line":{
+        "type":"line",
+        "data":{
+            "labels":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "datasets":[
+                {
+                    "label":"Current Week Sales",
+                    "data":[54,352,120,204,86,294,73],
+                    "backgroundColor": "#31d497d1",
+                    "borderColor":"#31d497",
+                    "borderWidth":".7"
+                },
+                {
+                    "label":"Last Week Sales",
+                    "data":[38,72,445,139,282,514,108],
+                    "backgroundColor":"#5d7f4e",
+                    "borderColor":"#000",
+                    "borderWidth":".7"
+                }
+            ]
+        },
+        "options": {
+            "lineTension":".35",
+            "fill":true,
+            "pointRadius":0,
+            "scales": {
+                "y": {
+                    "beginAtZero": true
+                }
+            }
+        }
+    }
+}
