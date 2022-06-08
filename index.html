@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="./icon.png">
     <script src="./fontawesome-free-6.0.0-web//js/all.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="crossorigin=""/> <!-- importando estilos de leaflet -->
     <title>Dashboard</title>
 </head>
 <body>
@@ -33,9 +34,8 @@
                 <p>12:14 Friday, june 10. 2022</p>
             </span>
             <div class="statistic">
-                <div class="items"><canvas id="graph-pie" width="315" height="200"></canvas></div>
-                <div class="items"><canvas id="graph-line" width="468" height="200"></canvas></div>
-
+                <div class="items ifError"><canvas id="graph-pie" width="315" height="200"></canvas></div>
+                <div class="items ifError"><canvas id="graph-line" width="468" height="200"></canvas></div>
                 <div class="items items-2">
                     <div>
                         <h4>$26,392</h4>
@@ -133,12 +133,13 @@
                         </ol>
                     </div>
                 </div>
-                <div class="items">9</div>
+                <div class="items" id="map" style="width: 273px;height:230px"></div>
             </div>
         </div>
     </div>
 
     <script src="./node_modules/chart.js/dist/chart.js"></script>  <!-- importando la libreria chartjs -->
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script> <!-- importando la libreria leaflet -->
     <script src="./script.js"></script>
 </body>
 </html>

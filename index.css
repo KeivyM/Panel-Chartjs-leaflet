@@ -275,3 +275,8 @@ body::before{
 .container-calendar .firstDay{
     grid-column-start: 4;
 }
+
+
+.hidden{
+    display: none;    
+}
